@@ -16,7 +16,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Webgrep is a set of different check and search utilities for the
 web-master:
-- taggrep is a program to grep for html tags. E.g search for meta tags
+- taggrep is a program to grep for HTML tags. E.g search for meta tags
   or list the title of a number of web pages.
 - lshtmlref is a nice utility to build tar archives from webpages and
   include all the necessary GIFs, textfiles etc..
@@ -26,19 +26,19 @@ web-master:
   check absolute links of protocol type http. It does the checks by
   sending HEAD requests to the webservers for the page in question.
 - webfgrep is an efficient web search engine that works well for up to
-  websites with up to 1Mb of html pages.
+  websites with up to 1Mb of HTML pages.
 - srcgrep searches web-pages for <img ... src=...> or <body ...
   background=...> and displays the data contained in the tag in a nice
   readable format.
 - hrefgrep is like srcgrep except that is searches for <a
   href=...>...</a> or an area tag of the from <area ... href=...>.
-- htmlpp removes line breakes in html tags that contain one of
+- htmlpp removes line breakes in HTML tags that contain one of
   href=,name=,background=,src= and compensate the removed newlines later
   on by adding them after the next newline outside a tag.
 
 %description -l pl
 Webgrep jest zestawem prostych narzêdzi dla webmastera:
-- taggrep jest programem wyszukuj±cym znaczniki html, np. znaczniki
+- taggrep jest programem wyszukuj±cym znaczniki HTML, np. znaczniki
   meta albo tytu³y stron.
 - lshtmlref buduje archiwa tar ze stron webowych, do³±czaj±c wszystkie
   obrazki, pliki tekstowe itd...
@@ -51,7 +51,7 @@ Webgrep jest zestawem prostych narzêdzi dla webmastera:
   <body ... background=...>
 - hrefgrep dzia³a jak srcgrep tylko ¿e szuka znaczników <a
   href=...></a> albo <area ... href=...>.
-- htmlpp usuwa znaki koñca linii w znacznikach html zawieraj±cych
+- htmlpp usuwa znaki koñca linii w znacznikach HTML zawieraj±cych
   cz³on href=,name=,background=,src= i dodaje usuniêty znak w linii
   nastêpuj±cej po znaczniku.
 
