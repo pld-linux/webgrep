@@ -61,10 +61,10 @@ Webgrep jest zestawem prostych narzêdzi:
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__install} -d $RPM_BUILD_ROOT%{_datadir}/webgrep
+install -d $RPM_BUILD_ROOT%{_datadir}/webgrep
 
 %{__make} install PREFIX=$RPM_BUILD_ROOT%{_prefix}
-%{__install} cgi-bin/* $RPM_BUILD_ROOT%{_datadir}/webgrep
+install cgi-bin/* $RPM_BUILD_ROOT%{_datadir}/webgrep
 
 gzip -9nf README webgrep-2.9.lsm
 
