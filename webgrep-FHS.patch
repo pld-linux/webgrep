@@ -1,12 +1,12 @@
-diff -urN webgrep-2.9/Makefile webgrep-2.9-new/Makefile
---- webgrep-2.9/Makefile	Sat May 13 23:29:39 2000
-+++ webgrep-2.9-new/Makefile	Thu Mar  8 20:54:12 2001
-@@ -22,7 +22,7 @@
- #INSTALL=bsdinst
+diff -burN webgrep-2.11.orig/Makefile webgrep-2.11/Makefile
+--- webgrep-2.11.orig/Makefile	Mon Jan  6 23:13:20 2003
++++ webgrep-2.11/Makefile	Tue Jul 22 14:39:22 2003
+@@ -1,7 +1,7 @@
+ # written by Guido Socher 
+ instroot=
+ PREFIX=$(instroot)/usr
+-MANDIR=$(PREFIX)/man
++MANDIR=$(PREFIX)/share/man
+ INSTALL=install
+ MANP=man1/srcgrep.1 man1/hrefgrep.1 man1/blnkcheck.1 man1/lshtmlref.1 man1/httpcheck.1 man1/webfgrep.1 man1/taggrep.1
  #-----------
- BINDIR=$(PREFIX)/bin
--MANDIR=$(PREFIX)/man/man1
-+MANDIR=$(PREFIX)/share/man/man1
- 
- all: taggrep lshtmlref srcgrep hrefgrep webfgrep blnkcheck htmlpp
- 

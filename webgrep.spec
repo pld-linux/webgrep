@@ -2,12 +2,12 @@
 Summary:	The webgrep tool box consists of 7 utilities for the web-master
 Summary(pl):	Webgrep jest zestawem 7 narzêdzi dla webmastera
 Name:		webgrep
-Version:	2.10
+Version:	2.11
 Release:	1
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://main.linuxfocus.org/~guido.socher/%{name}-%{version}.tar.gz
-# Source0-md5:	687a3421e78bd9f7d41202c2ef123be0
+# Source0-md5:	73ed89f2375dda3c76f7313085e9b53a
 Patch0:		%{name}-FHS.patch
 URL:		http://www.linuxfocus.org/~guido.socher/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
