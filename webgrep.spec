@@ -59,14 +59,14 @@ Webgrep jest zestawem prostych narzêdzi:
 	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags}"
 
+gzip -9nf README webgrep-2.9.lsm
+
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/webgrep
 
 %{__make} install PREFIX=$RPM_BUILD_ROOT%{_prefix}
 install cgi-bin/* $RPM_BUILD_ROOT%{_datadir}/webgrep
-
-gzip -9nf README webgrep-2.9.lsm
 
 %clean
 rm -rf $RPM_BUILD_ROOT
