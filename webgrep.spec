@@ -5,8 +5,6 @@ Version:	2.9
 Release:	2
 License:	GPL
 Group:		Applications/Networking
-Group(de):	Applikationen/Netzwerkwesen
-Group(pl):	Aplikacje/Sieciowe
 Source0:	http://www.linuxfocus.org/~guido.socher/%{name}-%{version}.tar.gz
 Patch0:		%{name}-FHS.patch
 URL:		http://www.linuxfocus.org/~guido.socher/
