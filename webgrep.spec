@@ -33,6 +33,25 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
   href=,name=,background=,src= and compensate the removed newlines later
   on by adding them after the next newline outside a tag
 
+%description -l pl
+Webgrep jest zestawem prostych narzêdzi:
+- taggrep jest programem wyszukuj±cym znaczniki html, np. znaczniki
+  meta albo tytu³y stron.
+- lshtmlref buduje archiwa tar ze stron webowych, do³±czaj±c wszystkie
+  obrazki, pliki tekstowe itd...
+- blnkcheck jest wydajnym narzêdziem sprawdzaj±cym czy wszystkie linki
+  w tre¶ci strony s± wa¿ne
+- httpcheck jest post procesorem polecenia "blnkcheck -a" i mo¿e byæ
+  u¿yty do sprawdzenia czy linki absolutne s± wa¿ne.
+- webfgrep jest wydajn± przeszukiwark± sieci WWW
+- srcgrep wyszukuje w tek¶cie strony znaczników <img ... src=...> albo
+  <body ... background=...>
+- hrefgrep dzia³a jak srcgrep tylko ¿e szuka znaczników <a
+  href=...></a> albo <area ... href=...>.
+- htmlpp usuwa znaki koñca linii w znacznikach html zawieraj±cych
+  cz³on href=,name=,background=,src= i dodaje usuniêty znak w linii
+  nastêpuj±cej po znaczniku.
+
 %prep
 %setup -q
 %patch0 -p1
