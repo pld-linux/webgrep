@@ -9,8 +9,7 @@ Release:	1
 License:	GPL
 Source0:	http://www.linuxfocus.org/~guido.socher/%{name}-%{version}.tar.gz
 Patch0:		%{name}-FHS.patch
-URL:		http://www.linuxfocus.org/~guido.socher
-Patch0:		%{name}-FHS.patch
+URL:		http://www.linuxfocus.org/~guido.socher/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -43,8 +42,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install PREFIX=$RPM_BUILD_ROOT%{_prefix}
 %{__install} -d $RPM_BUILD_ROOT%{_datadir}/webgrep
+
+%{__make} install PREFIX=$RPM_BUILD_ROOT%{_prefix}
 %{__install} cgi-bin/* $RPM_BUILD_ROOT%{_datadir}/webgrep
 
 gzip -9nf README webgrep-2.9.lsm
@@ -54,8 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc *.gz
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
-%dir %{_datadir}/webgrep
-%{_datadir}/webgrep/*
-%doc *.gz
+%{_datadir}/webgrep
