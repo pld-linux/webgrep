@@ -3,8 +3,7 @@ diff -burN webgrep-2.11.orig/Makefile webgrep-2.11/Makefile
 +++ webgrep-2.11/Makefile	Tue Jul 22 14:39:22 2003
 @@ -1,7 +1,7 @@
  # written by Guido Socher 
- instroot=
- PREFIX=$(instroot)/usr
+ PREFIX=$(DESTDIR)/usr
 -MANDIR=$(PREFIX)/man
 +MANDIR=$(PREFIX)/share/man
  INSTALL=install
