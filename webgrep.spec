@@ -59,7 +59,6 @@ Webgrep jest zestawem prostych narzêdzi:
 	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags}"
 
-gzip -9nf README webgrep-2.9.lsm
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -73,7 +72,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README webgrep-2.9.lsm
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
 %{_datadir}/webgrep
