@@ -10,6 +10,7 @@ Source0:	http://main.linuxfocus.org/~guido.socher/%{name}-%{version}.tar.gz
 # Source0-md5:	73ed89f2375dda3c76f7313085e9b53a
 Patch0:		%{name}-FHS.patch
 URL:		http://www.linuxfocus.org/~guido.socher/
+BuildRequires:	rpm-perlprov
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -63,12 +64,13 @@ Webgrep jest zestawem prostych narzêdzi dla webmastera:
 	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags}"
 
-
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/webgrep
 
-%{__make} install PREFIX=$RPM_BUILD_ROOT%{_prefix}
+%{__make} install \
+	PREFIX=$RPM_BUILD_ROOT%{_prefix}
+
 install cgi-bin/* $RPM_BUILD_ROOT%{_datadir}/webgrep
 
 %clean
