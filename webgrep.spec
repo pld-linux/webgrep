@@ -8,6 +8,7 @@ Version:	2.9
 Release:	1
 License:	GPL
 Source0:	http://www.linuxfocus.org/~guido.socher/%{name}-%{version}.tar.gz
+Patch0:		%{name}-FHS.patch
 URL:		http://www.linuxfocus.org/~guido.socher
 Patch0:		%{name}-FHS.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
