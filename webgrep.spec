@@ -11,6 +11,8 @@ URL:		http://www.linuxfocus.org/~guido.socher/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+Webgrep is a set of different check and search utilities for the
+web-master:
 - taggrep is a program to grep for html tags. E.g search for meta tags
   or list the title of a number of web pages.
 - lshtmlref is a nice utility to build tar archives from webpages and
@@ -32,7 +34,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
   on by adding them after the next newline outside a tag.
 
 %description -l pl
-Webgrep jest zestawem prostych narzêdzi:
+Webgrep jest zestawem prostych narzêdzi dla webmastera:
 - taggrep jest programem wyszukuj±cym znaczniki html, np. znaczniki
   meta albo tytu³y stron.
 - lshtmlref buduje archiwa tar ze stron webowych, do³±czaj±c wszystkie
@@ -72,7 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README webgrep-2.10.lsm
+%doc README
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
 %{_datadir}/webgrep
