@@ -1,0 +1,12 @@
+diff -urN webgrep-2.9/Makefile webgrep-2.9-new/Makefile
+--- webgrep-2.9/Makefile	Sat May 13 23:29:39 2000
++++ webgrep-2.9-new/Makefile	Thu Mar  8 20:54:12 2001
+@@ -22,7 +22,7 @@
+ #INSTALL=bsdinst
+ #-----------
+ BINDIR=$(PREFIX)/bin
+-MANDIR=$(PREFIX)/man/man1
++MANDIR=$(PREFIX)/share/man/man1
+ 
+ all: taggrep lshtmlref srcgrep hrefgrep webfgrep blnkcheck htmlpp
+ 
