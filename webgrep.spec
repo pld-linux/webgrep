@@ -68,8 +68,7 @@ Webgrep jest zestawem prostych narzêdzi dla webmastera:
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/webgrep
 
-%{__make} install \
-	PREFIX=$RPM_BUILD_ROOT%{_prefix}
+%{makeinstall}
 
 install cgi-bin/* $RPM_BUILD_ROOT%{_datadir}/webgrep
 
