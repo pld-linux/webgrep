@@ -1,7 +1,7 @@
 Summary:	The webgrep tool box consists of 7 utilities for the web-master
 Summary(pl):	Webgrep jest zestawem 7 narzêdzi dla webmastera
 Name:		webgrep
-Version:	2.9b
+Version:	2.10
 Release:	1
 License:	GPL
 Group:		Applications/Networking
@@ -29,7 +29,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
   href=...>...</a> or an area tag of the from <area ... href=...>.
 - htmlpp removes line breakes in html tags that contain one of
   href=,name=,background=,src= and compensate the removed newlines later
-  on by adding them after the next newline outside a tag
+  on by adding them after the next newline outside a tag.
 
 %description -l pl
 Webgrep jest zestawem prostych narzêdzi:
@@ -72,7 +72,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README webgrep-2.9.lsm
+%doc README webgrep-2.10.lsm
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
 %{_datadir}/webgrep
