@@ -40,10 +40,10 @@ web-master:
 Webgrep jest zestawem prostych narzêdzi dla webmastera:
 - taggrep jest programem wyszukuj±cym znaczniki HTML, np. znaczniki
   meta albo tytu³y stron.
-- lshtmlref buduje archiwa tar ze stron webowych, do³±czaj±c wszystkie
+- lshtmlref buduje archiwa tar ze stron WWW, do³±czaj±c wszystkie
   obrazki, pliki tekstowe itd...
-- blnkcheck jest wydajnym narzêdziem sprawdzaj±cym czy wszystkie linki
-  w tre¶ci strony s± wa¿ne
+- blnkcheck jest wydajnym narzêdziem sprawdzaj±cym czy wszystkie
+  odno¶niki w tre¶ci strony s± wa¿ne
 - httpcheck jest post procesorem polecenia "blnkcheck -a" i mo¿e byæ
   u¿yty do sprawdzenia czy linki absolutne s± wa¿ne.
 - webfgrep jest wydajn± przeszukiwark± sieci WWW
