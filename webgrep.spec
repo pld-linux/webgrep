@@ -1,11 +1,11 @@
 Summary:	The webgrep tool box consists of 7 utilities for the web-master
 Summary(pl):	Webgrep jest zestawem 7 narzêdzi dla webmastera
 Name:		webgrep
-Version:	2.9
-Release:	2
+Version:	2.9b
+Release:	1
 License:	GPL
 Group:		Applications/Networking
-Source0:	http://www.linuxfocus.org/~guido.socher/%{name}-%{version}.tar.gz
+Source0:	http://main.linuxfocus.org/~guido.socher/%{name}-%{version}.tar.gz
 Patch0:		%{name}-FHS.patch
 URL:		http://www.linuxfocus.org/~guido.socher/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -55,7 +55,9 @@ Webgrep jest zestawem prostych narzêdzi:
 %patch0 -p1
 
 %build
-%{__make} CFLAGS="%{rpmcflags}"
+%{__make} \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
