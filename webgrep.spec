@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	The webgrep tool box consists of 7 utilities for the web-master
-Summary(pl.UTF-8):   Webgrep jest zestawem 7 narzędzi dla webmastera
+Summary(pl.UTF-8):	Webgrep jest zestawem 7 narzędzi dla webmastera
 Name:		webgrep
 Version:	2.12
 Release:	1
